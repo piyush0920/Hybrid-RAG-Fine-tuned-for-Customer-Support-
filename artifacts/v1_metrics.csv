@@ -1,0 +1,9 @@
+metric,baseline,naive_rag,improvement
+Format Adherence,100.0,100.0,0.0
+Intent Accuracy,2.0,0.0,-100.0
+Category Accuracy,6.0,10.0,66.7
+ROUGE-1,0.016,0.029,81.2
+ROUGE-L,0.014,0.026,85.7
+BLEU,0.0,0.0,
+Consistency,100.0,100.0,0.0
+Hallucination,0.0,0.0,

@@ -1,0 +1,151 @@
+system,query,true_intent,predicted_intent,valid_json,exact_match,fuzzy_match,rouge1,rougeL,bleu,hallucination
+Baseline,i cannot afford order {{order number}},cancel_order,purchase,True,False,False,0.007722007722007721,0.007722007722007721,0.0,False
+Naive RAG,i cannot afford order {{order number}},cancel_order,purchase,True,False,False,0.007722007722007721,0.007722007722007721,0.0,False
+Hybrid RAG,i cannot afford order {{order number}},cancel_order,handle_incomplete_order,True,False,True,0.015384615384615385,0.015384615384615385,0.0,False
+Baseline,i need assistance to enter another shipping address,set_up_shipping_address,customer service,True,False,False,0.016666666666666666,0.016666666666666666,0.0,False
+Naive RAG,i need assistance to enter another shipping address,set_up_shipping_address,order tracking,True,False,False,0.025,0.025,0.0,False
+Hybrid RAG,i need assistance to enter another shipping address,set_up_shipping_address,change_shipping_address,True,False,True,0.03333333333333333,0.03333333333333333,0.0,False
+Baseline,need assistance changing the details on my profile,edit_account,customer service,True,False,False,0.015748031496062992,0.015748031496062992,0.0,False
+Naive RAG,need assistance changing the details on my profile,edit_account,request,True,False,False,0.023715415019762844,0.023715415019762844,0.0,False
+Hybrid RAG,need assistance changing the details on my profile,edit_account,modify_profile_details,True,False,False,0.023809523809523808,0.023809523809523808,0.0,False
+Baseline,i do not know what i have to do to speak with an operator,contact_human_agent,information_request,True,False,False,0.017937219730941704,0.017937219730941704,0.0,False
+Naive RAG,i do not know what i have to do to speak with an operator,contact_human_agent,information,True,False,False,0.0,0.0,0.0,False
+Hybrid RAG,i do not know what i have to do to speak with an operator,contact_human_agent,contact_support,True,False,False,0.0,0.0,0.0,False
+Baseline,i have problems entering a different shipping address,set_up_shipping_address,customer_service,True,False,False,0.016666666666666666,0.016666666666666666,0.0,False
+Naive RAG,i have problems entering a different shipping address,set_up_shipping_address,order_tracking,True,False,False,0.03319502074688797,0.03319502074688797,0.0,False
+Hybrid RAG,i have problems entering a different shipping address,set_up_shipping_address,change_shipping_address,True,False,True,0.025104602510460254,0.025104602510460254,0.0,False
+Baseline,help me cancel my subscriptiopn to ur newsletter,newsletter_subscription,customer service,True,False,False,0.02531645569620253,0.02531645569620253,0.0,False
+Naive RAG,help me cancel my subscriptiopn to ur newsletter,newsletter_subscription,cancel subscription,True,False,True,0.02531645569620253,0.02531645569620253,0.0,False
+Hybrid RAG,help me cancel my subscriptiopn to ur newsletter,newsletter_subscription,cancel_subscription,True,False,True,0.03389830508474576,0.03389830508474576,0.0,False
+Baseline,ohw do i check how soon can i expect the item?,delivery_period,information_request,True,False,False,0.015625,0.015625,0.0,False
+Naive RAG,ohw do i check how soon can i expect the item?,delivery_period,informational,True,False,False,0.007874015748031496,0.007874015748031496,0.0,False
+Hybrid RAG,ohw do i check how soon can i expect the item?,delivery_period,check_delivery_time,True,False,True,0.2019543973941368,0.09771986970684038,0.0005351274181305448,True
+Baseline,"i have got to edit my goddamn account, could you help me?",edit_account,customer service,True,False,False,0.03816793893129771,0.03053435114503817,0.0,False
+Naive RAG,"i have got to edit my goddamn account, could you help me?",edit_account,request_for_account_editing,True,False,True,0.03802281368821293,0.022813688212927754,0.0,False
+Hybrid RAG,"i have got to edit my goddamn account, could you help me?",edit_account,account_edit,True,False,True,0.038314176245210725,0.03065134099616858,0.0,False
+Baseline,close {{account type}} account,delete_account,transaction,True,False,False,0.008064516129032258,0.008064516129032258,0.0,False
+Naive RAG,close {{account type}} account,delete_account,recover,True,False,False,0.016064257028112452,0.016064257028112452,0.0,False
+Hybrid RAG,close {{account type}} account,delete_account,renew_account,True,False,True,0.0,0.0,0.0,False
+Baseline,i want to update my user profile,edit_account,update,True,False,False,0.015384615384615385,0.015384615384615385,0.0,False
+Naive RAG,i want to update my user profile,edit_account,update_user_profile,True,False,False,0.03053435114503817,0.022900763358778622,0.0,False
+Hybrid RAG,i want to update my user profile,edit_account,update_profile,True,False,False,0.03065134099616858,0.02298850574712644,0.0,False
+Baseline,is it possible to create a standard account?,create_account,informational,True,False,False,0.007905138339920948,0.007905138339920948,0.0,False
+Naive RAG,is it possible to create a standard account?,create_account,request,True,False,False,0.015810276679841896,0.015810276679841896,0.0,False
+Hybrid RAG,is it possible to create a standard account?,create_account,create_account,True,True,True,0.0,0.0,0.0,False
+Baseline,need to write a review about ur company how can i do it,review,customer_service,True,False,False,0.017937219730941704,0.017937219730941704,0.0,False
+Naive RAG,need to write a review about ur company how can i do it,review,inform,True,False,False,0.0,0.0,0.0,False
+Hybrid RAG,need to write a review about ur company how can i do it,review,write_review,True,False,True,0.00904977375565611,0.00904977375565611,0.0,False
+Baseline,how can i find bill #00108?,check_invoice,information_request,True,False,False,0.00796812749003984,0.00796812749003984,0.0,False
+Naive RAG,how can i find bill #00108?,check_invoice,information_request,True,False,False,0.008,0.008,0.0,False
+Hybrid RAG,how can i find bill #00108?,check_invoice,search_for_item,True,False,False,0.008097165991902834,0.008097165991902834,0.0,False
+Baseline,assistance to submit a different shipping address,set_up_shipping_address,customer service,True,False,False,0.016666666666666666,0.016666666666666666,0.0,False
+Naive RAG,assistance to submit a different shipping address,set_up_shipping_address,order tracking,True,False,False,0.0796812749003984,0.0796812749003984,4.52905012041759e-07,False
+Hybrid RAG,assistance to submit a different shipping address,set_up_shipping_address,change_shipping_address,True,False,True,0.03319502074688797,0.03319502074688797,0.0,False
+Baseline,can you help me leave an opinion foor a product?,review,customer service,True,False,False,0.016064257028112452,0.008032128514056226,0.0,False
+Naive RAG,can you help me leave an opinion foor a product?,review,customer service,True,False,False,0.016129032258064516,0.008064516129032258,0.0,False
+Hybrid RAG,can you help me leave an opinion foor a product?,review,leave_feedback,True,False,False,0.0,0.0,0.0,False
+Baseline,need help downloading the invoices from {{person name}},get_invoice,help,True,False,False,0.008368200836820083,0.008368200836820083,0.0,False
+Naive RAG,need help downloading the invoices from {{person name}},get_invoice,order inquiry,True,False,False,0.008368200836820083,0.008368200836820083,0.0,False
+Hybrid RAG,need help downloading the invoices from {{person name}},get_invoice,request_invoice_download,True,False,True,0.0,0.0,0.0,False
+Baseline,i have got to see the status of my newsletter subvscription,newsletter_subscription,information_request,True,False,False,0.0,0.0,0.0,False
+Naive RAG,i have got to see the status of my newsletter subvscription,newsletter_subscription,informational,True,False,False,0.016666666666666666,0.016666666666666666,0.0,False
+Hybrid RAG,i have got to see the status of my newsletter subvscription,newsletter_subscription,check_subscription_status,True,False,True,0.016597510373443983,0.016597510373443983,0.0,False
+Baseline,have a problem with creating my platinum account,create_account,account creation,True,False,True,0.016,0.016,0.0,False
+Naive RAG,have a problem with creating my platinum account,create_account,,False,False,False,0.0158102766798419,0.0158102766798419,1.4135139271500237e-12,False
+Hybrid RAG,have a problem with creating my platinum account,create_account,create_platinum_account,True,False,True,0.008032128514056226,0.008032128514056226,0.0,False
+Baseline,what do i need to do to see bill #37777?,check_invoice,information_request,True,False,False,0.0,0.0,0.0,False
+Naive RAG,what do i need to do to see bill #37777?,check_invoice,order tracking,True,False,False,0.056451612903225805,0.04838709677419355,1.722453657045889e-08,False
+Hybrid RAG,what do i need to do to see bill #37777?,check_invoice,view_invoice,True,False,True,0.0,0.0,0.0,False
+Baseline,updating information on {{account category}} account,edit_account,information update,True,False,False,0.016,0.016,0.0,False
+Naive RAG,updating information on {{account category}} account,edit_account,technical troubleshooting,True,False,False,0.024096385542168672,0.024096385542168672,0.0,False
+Hybrid RAG,updating information on {{account category}} account,edit_account,update_account_info,True,False,True,0.016064257028112452,0.008032128514056226,0.0,False
+Baseline,need help to shop several of ur item,place_order,customer_service,True,False,False,0.008064516129032258,0.008064516129032258,0.0,False
+Naive RAG,need help to shop several of ur item,place_order,return,True,False,False,0.01619433198380567,0.008097165991902836,0.0,False
+Hybrid RAG,need help to shop several of ur item,place_order,purchase_multiple_items,True,False,False,0.0,0.0,0.0,False
+Baseline,can you help me obtaining refunds?,get_refund,customer_service,True,False,False,0.014035087719298246,0.014035087719298246,0.0,False
+Naive RAG,can you help me obtaining refunds?,get_refund,requesting information about refund process,True,False,True,0.03460207612456748,0.027681660899653977,1.8690897945118593e-11,False
+Hybrid RAG,can you help me obtaining refunds?,get_refund,request_refunds,True,False,False,0.01413427561837456,0.01413427561837456,0.0,False
+Baseline,help me checking what shipment methods i have,delivery_options,information_request,True,False,False,0.008333333333333333,0.008333333333333333,0.0,False
+Naive RAG,help me checking what shipment methods i have,delivery_options,order tracking,True,False,False,0.025,0.025,0.0,False
+Hybrid RAG,help me checking what shipment methods i have,delivery_options,check_shipping_options,True,False,True,0.025104602510460254,0.025104602510460254,0.0,False
+Baseline,i call to check when my parcel is gonna arive,delivery_period,customer service inquiry,True,False,False,0.024793388429752067,0.01652892561983471,0.0,False
+Naive RAG,i call to check when my parcel is gonna arive,delivery_period,,False,False,False,0.12213740458015268,0.08396946564885496,9.869137344752997e-06,False
+Hybrid RAG,i call to check when my parcel is gonna arive,delivery_period,track_delivery,True,False,True,0.025104602510460254,0.025104602510460254,0.0,False
+Baseline,i want to check when my item is going to arrive,delivery_period,order status inquiry,True,False,False,0.024896265560165973,0.024896265560165973,0.0,False
+Naive RAG,i want to check when my item is going to arrive,delivery_period,,False,False,False,0.12213740458015268,0.08396946564885496,9.869137344752997e-06,False
+Hybrid RAG,i want to check when my item is going to arrive,delivery_period,track_delivery,True,False,True,0.025104602510460254,0.025104602510460254,0.0,False
+Baseline,problem with {{account type}} account removals,delete_account,support,True,False,False,0.008032128514056226,0.008032128514056226,0.0,False
+Naive RAG,problem with {{account type}} account removals,delete_account,technical troubleshooting,True,False,False,0.024,0.024,0.0,False
+Hybrid RAG,problem with {{account type}} account removals,delete_account,report_issue,True,False,False,0.03187250996015936,0.01593625498007968,0.0,False
+Baseline,can you help me see the early exit penalties?,check_cancellation_fee,information_request,True,False,False,0.018018018018018018,0.018018018018018018,0.0,False
+Naive RAG,can you help me see the early exit penalties?,check_cancellation_fee,information,True,False,False,0.0,0.0,0.0,False
+Hybrid RAG,can you help me see the early exit penalties?,check_cancellation_fee,view_penalty,True,False,False,0.009009009009009009,0.009009009009009009,0.0,False
+Baseline,i dont know how to cancel purchase {{order number}},cancel_order,purchase cancellation,True,False,False,0.01687763713080169,0.01687763713080169,0.0,False
+Naive RAG,i dont know how to cancel purchase {{order number}},cancel_order,cancel purchase,True,False,True,0.01694915254237288,0.01694915254237288,0.0,False
+Hybrid RAG,i dont know how to cancel purchase {{order number}},cancel_order,cancel_purchase,True,False,True,0.017094017094017096,0.017094017094017096,0.0,False
+Baseline,where to file a customer reclamation against your company ?,complaint,customer service inquiry,True,False,False,0.01593625498007968,0.01593625498007968,7.967550048815966e-13,False
+Naive RAG,where to file a customer reclamation against your company ?,complaint,customer support,True,False,False,0.02390438247011952,0.02390438247011952,0.0,False
+Hybrid RAG,where to file a customer reclamation against your company ?,complaint,file_complaint,True,False,True,0.008130081300813009,0.008130081300813009,2.100036025930004e-55,False
+Baseline,show cancellation charges,check_cancellation_fee,customer service,True,False,False,0.02531645569620253,0.02531645569620253,0.0,False
+Naive RAG,show cancellation charges,check_cancellation_fee,subscription management,True,False,False,0.01694915254237288,0.01694915254237288,0.0,False
+Hybrid RAG,show cancellation charges,check_cancellation_fee,get_info_about_charges,True,False,False,0.02542372881355932,0.02542372881355932,0.0,False
+Baseline,help checking the withdrawal penalties,check_cancellation_fee,customer service,True,False,False,0.016326530612244896,0.016326530612244896,0.0,False
+Naive RAG,help checking the withdrawal penalties,check_cancellation_fee,financial,True,False,False,0.0,0.0,0.0,False
+Hybrid RAG,help checking the withdrawal penalties,check_cancellation_fee,check_penalty,True,False,False,0.008230452674897118,0.008230452674897118,0.0,False
+Baseline,what do i need to do to check the shipment options?,delivery_options,information_request,True,False,False,0.008333333333333333,0.008333333333333333,0.0,False
+Naive RAG,what do i need to do to check the shipment options?,delivery_options,,False,False,False,0.18181818181818182,0.16666666666666669,0.0006051493250520521,False
+Hybrid RAG,what do i need to do to check the shipment options?,delivery_options,check_shipment_options,True,False,True,0.33656957928802583,0.20064724919093851,0.02030688551866404,False
+Baseline,i want to make a consumer claim,complaint,purchase,True,False,False,0.0,0.0,0.0,False
+Naive RAG,i want to make a consumer claim,complaint,billing disputes,True,False,False,0.01593625498007968,0.01593625498007968,0.0,False
+Hybrid RAG,i want to make a consumer claim,complaint,make_claim,True,False,False,0.008064516129032258,0.008064516129032258,0.0,False
+Baseline,i do not know how i can see the cancellation charge,check_cancellation_fee,information_request,True,False,False,0.01694915254237288,0.01694915254237288,0.0,False
+Naive RAG,i do not know how i can see the cancellation charge,check_cancellation_fee,cancelation,True,False,False,0.01702127659574468,0.01702127659574468,0.0,False
+Hybrid RAG,i do not know how i can see the cancellation charge,check_cancellation_fee,view_fee,True,False,False,0.0,0.0,0.0,False
+Baseline,i am waiting for a reimbursement of {{refund amount}} dollars,track_refund,request,True,False,False,0.00704225352112676,0.00704225352112676,0.0,False
+Naive RAG,i am waiting for a reimbursement of {{refund amount}} dollars,track_refund,request_refund,True,False,True,0.014035087719298246,0.014035087719298246,0.0,False
+Hybrid RAG,i am waiting for a reimbursement of {{refund amount}} dollars,track_refund,request_refund,True,False,True,0.01413427561837456,0.01413427561837456,0.0,False
+Baseline,i do not know what i have to do to ask for a rebate of money,get_refund,information_request,True,False,False,0.01593625498007968,0.01593625498007968,0.0,False
+Naive RAG,i do not know what i have to do to ask for a rebate of money,get_refund,billing disputes,True,False,False,0.024,0.024,0.0,False
+Hybrid RAG,i do not know what i have to do to ask for a rebate of money,get_refund,ask_about_rebate,True,False,False,0.024,0.024,0.0,False
+Baseline,open another premium account for mum,create_account,create_account,True,True,True,0.016,0.016,0.0,False
+Naive RAG,open another premium account for mum,create_account,create,True,False,True,0.008064516129032258,0.008064516129032258,0.0,False
+Hybrid RAG,open another premium account for mum,create_account,create_account,True,True,True,0.016064257028112452,0.016064257028112452,0.0,False
+Baseline,can you help me report troubles with payment?,payment_issue,customer service,True,False,False,0.02298850574712644,0.02298850574712644,0.0,False
+Naive RAG,can you help me report troubles with payment?,payment_issue,help,True,False,False,0.007722007722007721,0.007722007722007721,0.0,False
+Hybrid RAG,can you help me report troubles with payment?,payment_issue,report_payment_issue,True,False,True,0.030651340996168584,0.02298850574712644,0.0,False
+Baseline,i don't know how i can talk to cstomer support,contact_customer_service,help,True,False,False,0.016736401673640166,0.016736401673640166,0.0,False
+Naive RAG,i don't know how i can talk to cstomer support,contact_customer_service,information_request,True,False,False,0.008298755186721992,0.008298755186721992,0.0,False
+Hybrid RAG,i don't know how i can talk to cstomer support,contact_customer_service,contact_support,True,False,False,0.016736401673640166,0.016736401673640166,0.0,False
+Baseline,error with sign-up,registration_problems,customer service,True,False,False,0.03053435114503817,0.03053435114503817,0.0,False
+Naive RAG,error with sign-up,registration_problems,account creation,True,False,False,0.022900763358778622,0.022900763358778622,0.0,False
+Hybrid RAG,error with sign-up,registration_problems,sign_up_problm,True,False,False,0.038314176245210725,0.038314176245210725,0.0,False
+Baseline,i need assistance to restore the password of my profile,recover_password,support,True,False,False,0.02298850574712644,0.01532567049808429,0.0,False
+Naive RAG,i need assistance to restore the password of my profile,recover_password,reset password,True,False,True,0.038314176245210725,0.03065134099616858,0.0,False
+Hybrid RAG,i need assistance to restore the password of my profile,recover_password,recover_password,True,True,True,0.038314176245210725,0.038314176245210725,0.0,False
+Baseline,i do not know what i have to do to chat with a human agent,contact_human_agent,information_request,True,False,False,0.008333333333333333,0.008333333333333333,0.0,False
+Naive RAG,i do not know what i have to do to chat with a human agent,contact_human_agent,information_request,True,False,False,0.008333333333333333,0.008333333333333333,0.0,False
+Hybrid RAG,i do not know what i have to do to chat with a human agent,contact_human_agent,inform_about_need,True,False,False,0.13194444444444445,0.09027777777777778,0.00026126298895856853,True
+Baseline,how can i check the available payment modalities?,check_payment_methods,information_request,True,False,False,0.007662835249042146,0.007662835249042146,0.0,False
+Naive RAG,how can i check the available payment modalities?,check_payment_methods,information_request,True,False,False,0.015325670498084292,0.015325670498084292,0.0,False
+Hybrid RAG,how can i check the available payment modalities?,check_payment_methods,check_payment_options,True,False,True,0.015325670498084292,0.015325670498084292,0.0,False
+Baseline,are the charges of ur services reimbursable,check_refund_policy,request,True,False,False,0.008032128514056226,0.008032128514056226,0.0,False
+Naive RAG,are the charges of ur services reimbursable,check_refund_policy,billing disputes,True,False,False,0.024,0.024,0.0,False
+Hybrid RAG,are the charges of ur services reimbursable,check_refund_policy,check_reimbursement_policy,True,False,True,0.024096385542168676,0.024096385542168676,0.0,False
+Baseline,i try to chat with a live agent,contact_human_agent,communication,True,False,False,0.016666666666666666,0.016666666666666666,0.0,False
+Naive RAG,i try to chat with a live agent,contact_human_agent,contact,True,False,False,0.016736401673640166,0.008368200836820083,0.0,False
+Hybrid RAG,i try to chat with a live agent,contact_human_agent,contact_support,True,False,False,0.016806722689075633,0.016806722689075633,0.0,False
+Baseline,how can i purchase several of your article?,place_order,purchase,True,False,False,0.008097165991902836,0.008097165991902836,0.0,False
+Naive RAG,how can i purchase several of your article?,place_order,purchase,True,False,False,0.008097165991902836,0.008097165991902836,0.0,False
+Hybrid RAG,how can i purchase several of your article?,place_order,purchase_multiple_items,True,False,False,0.008064516129032258,0.008064516129032258,0.0,False
+Baseline,i want help speaking to customer service,contact_customer_service,help,True,False,False,0.025,0.025,0.0,False
+Naive RAG,i want help speaking to customer service,contact_customer_service,request assistance,True,False,False,0.008333333333333333,0.008333333333333333,0.0,False
+Hybrid RAG,i want help speaking to customer service,contact_customer_service,contact_support,True,False,False,0.016736401673640166,0.016736401673640166,0.0,False
+Baseline,i need help to get my invoices from {{person name}},get_invoice,help,True,False,False,0.008368200836820083,0.008368200836820083,0.0,False
+Naive RAG,i need help to get my invoices from {{person name}},get_invoice,order_tracking,True,False,False,0.07228915662650603,0.07228915662650603,0.0,False
+Hybrid RAG,i need help to get my invoices from {{person name}},get_invoice,request_invoice,True,False,True,0.0,0.0,0.0,False
+Baseline,can you help me seeing when my product is going to arrive?,delivery_period,information_request,True,False,False,0.015625,0.015625,0.0,False
+Naive RAG,can you help me seeing when my product is going to arrive?,delivery_period,information_request,True,False,False,0.01568627450980392,0.01568627450980392,0.0,False
+Hybrid RAG,can you help me seeing when my product is going to arrive?,delivery_period,track_delivery,True,False,True,0.023622047244094488,0.023622047244094488,0.0,False
+Baseline,updating purchase {{order number}},change_order,purchase update,True,False,False,0.015325670498084292,0.015325670498084292,0.0,False
+Naive RAG,updating purchase {{order number}},change_order,update payment details,True,False,False,0.030651340996168584,0.030651340996168584,4.832563387401773e-13,False
+Hybrid RAG,updating purchase {{order number}},change_order,update_purchase,True,False,False,0.03831417624521073,0.03831417624521073,0.0,False

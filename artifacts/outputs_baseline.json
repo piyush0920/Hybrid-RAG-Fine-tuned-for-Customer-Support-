@@ -1,0 +1,3130 @@
+[
+  {
+    "test_query": "need help to shop several of ur item",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"shopping\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "shopping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance trying to update the shipping address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how to check the cancellation  penalties",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "want assistance to see the payment modalities",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"payment\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "payment",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i get information about opening a standard account?",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"account-opening\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "account-opening",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how to see the status of order {{order number}}",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "need help editing m address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"address correction\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "address correction",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i see at what time i can call customer support?",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"support_information\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "support_information",
+    "valid_json": true
+  },
+  {
+    "test_query": "using standard accouny",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "i cannot afford order {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "speaking with assistant",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"communication\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "communication",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "wanna see what shipment methods i can choose how do i do it",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i can't check if there is anything wrong with my rebate",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"rebate_check\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "rebate_check",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have an issue submitting the secondray delivery address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "can i place an order from {{delivery city}}",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "have a problem with creating my platinum account",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"account creation\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "account creation",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what i need to do to send some damn feedback",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to check if there are any updates on the restitution",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"product_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "product_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me to acquire some of your article",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"article_acquisition\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "article_acquisition",
+    "valid_json": true
+  },
+  {
+    "test_query": "track order {{order number}}",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "repor sign-up problems",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to see the bills from {{person name}}?",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance opening user account",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer support\",\n  \"category\": \"account opening\"\n}\n```",
+    "parsed_intent": "customer support",
+    "parsed_category": "account opening",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to create a premium account for my fiance",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"create_account\",\n  \"category\": \"account_creation\"\n}\n```",
+    "parsed_intent": "create_account",
+    "parsed_category": "account_creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "where can i report issues with payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"payment\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "payment",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me report troubles with payment?",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "can ya help me to send some feedback about a service",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"feedback\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "feedback",
+    "valid_json": true
+  },
+  {
+    "test_query": "show me in which situations can i ask for reimbursements",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"reimbursement\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "reimbursement",
+    "valid_json": true
+  },
+  {
+    "test_query": "how to see ur allowed payment modalities",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"payment_options\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "payment_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "need help seeing the early exig fee",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am waiting for a restitution of {{currency symbol}}{{refund amount}}",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"financial\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "financial",
+    "valid_json": true
+  },
+  {
+    "test_query": "how to shop a few of ur article",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"shopping\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "shopping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know what i have to do to remove my platinum account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "need assistance changing the details on my profile",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"profile management\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "profile management",
+    "valid_json": true
+  },
+  {
+    "test_query": "update details on gold account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am trying to see the status of order {{order number}}",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help cancelling my subscription to your newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"subscription cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "subscription cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i need to do to order something?",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"order\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "order",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you tell me at what time i can call customer assistance?",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"service_information\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "service_information",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i purchase several of your article?",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"product\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "product",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to get rebates of money?",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"rewards\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "rewards",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me see what hours i can call customer support?",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"support_information\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "support_information",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to enter another shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "order status",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what to do to report an error with payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"customer service - payments\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "customer service - payments",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help restoring my user account pin",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i need to do to check the shipment options?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me download the bill from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance locating my invoices from {{person name}}",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "od ya deliver to {{delivery country}}",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"order delivery\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "order delivery",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want somebody",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help notifying of a trouble with payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want informatoin about the cancellation of my {{account type}} account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "wanna see my bill from {{person name}}",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am looking for information about a delivery address change",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "ohw do i check how soon can i expect the item?",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help speaking to customer service",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help talking with somebody",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"communication\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "communication",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to obtain a damn restitution of my money?",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"financial\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "financial",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know how i can notify of a trouble with payments",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need information about delivery periods",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to check what shipment methods i have, help me",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me to check when will my article arrive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping status\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping status",
+    "valid_json": true
+  },
+  {
+    "test_query": "correct data on premium account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help writing a comment about ur services",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "how to change order {{order number}}?",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"order_management\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "order_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to see the eta of the order {{order number}}, how to do it?",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "where do i download my goddamn invoices from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance receiving the company newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"newsletter\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "newsletter",
+    "valid_json": true
+  },
+  {
+    "test_query": "where doi send feedback about your company?",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"feedback\",\n  \"category\": \"company\"\n}\n```",
+    "parsed_intent": "feedback",
+    "parsed_category": "company",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance seeing what shipment methods you offer",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i create a {{account type}} account for my daughter?",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"account creation\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "account creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how i can see the cancellation charge",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have to do to see my compensation current status?",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"employee-questions\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "employee-questions",
+    "valid_json": true
+  },
+  {
+    "test_query": "problems with cancelling order {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"order_cancellation\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "order_cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "can ushow me the withdrawal penalties",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i find bill #00108?",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_details\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_details",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what i have to do to ask for a rebate of money",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to check when my item is going to arrive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"order status inquiry\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "order status inquiry",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i shop some products",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"shopping\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "shopping",
+    "valid_json": true
+  },
+  {
+    "test_query": "get invoices from last purchase",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_invoice\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "request_invoice",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to check in which cases can i request a refund",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund_request\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund_request",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to notify of problems with a sign-up",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i ned help to talk to an operator",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_support\",\n  \"category\": \"talk_to_operator\"\n}\n```",
+    "parsed_intent": "customer_support",
+    "parsed_category": "talk_to_operator",
+    "valid_json": true
+  },
+  {
+    "test_query": "want assistance to notify of an erro with payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "is there an address to submit an opinion for ur company",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"contact\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "contact",
+    "valid_json": true
+  },
+  {
+    "test_query": "there are problems setting another shipping address up",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to see the termination fee",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to download the invoice",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance to check in what cases can i ask to be refunded",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i check the available payment modalities?",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"payment_options\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "payment_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "want hepl regarding my signup",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"signup\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "signup",
+    "valid_json": true
+  },
+  {
+    "test_query": "need to inform of problems with online payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to see the status of my newsletter subvscription",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"subscription_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "subscription_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "need assistance to get my invoice #85632",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"invoice\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "invoice",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to send my feedback, i need assistance",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"feedback\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "feedback",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "wanna swap some items of order {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"item exchange\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "item exchange",
+    "valid_json": true
+  },
+  {
+    "test_query": "where could i check order {{order number}} fucking curent status",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"order status\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "order status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to list your goddamn available payment modalities",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_payment_modality\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request_payment_modality",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to remove an item from order {{order number}}, i need hepl",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"order_management\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "order_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don want order {{order number}} i'd like to cancel it",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"cancel order\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "cancel order",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me track order {{order number}}?",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"order_tracking\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "order_tracking",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help to know if there is anything wrong with the refund",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"refund assistance\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "refund assistance",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me check how long it takes for the parcel to arrive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "want helpmaking a consumer reclamation against ur company",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"product_return\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "product_return",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to place an order from {{delivery city}} ?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "get refund",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"refund\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "refund",
+    "valid_json": true
+  },
+  {
+    "test_query": "problems with swapping a product of purchase {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"product exchange or refund\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "product exchange or refund",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how i can talk to cstomer support",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need to see in which cases can i ask for reimbursements",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"reimbursement\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "reimbursement",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to notify of an error with payments",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i use the {{account category}} account?",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"product_usage\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "product_usage",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how to list your allowed payment methods",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"payment\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "payment",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to update my user profile",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"update\",\n  \"category\": \"profile\"\n}\n```",
+    "parsed_intent": "update",
+    "parsed_category": "profile",
+    "valid_json": true
+  },
+  {
+    "test_query": "where to check at wnat time customer assistance available is",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "would it be possible to speak to someone?",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"communication\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "communication",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to enter the secondaryshipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance notifying of a problem with online payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "updating purchase {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase update\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "purchase update",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to see in which situations can irequest a refund",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know how to switch to the standard account",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "could i see the goddamn available payment methods?",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_information\",\n  \"category\": \"payment_methods\"\n}\n```",
+    "parsed_intent": "request_information",
+    "parsed_category": "payment_methods",
+    "valid_json": true
+  },
+  {
+    "test_query": "where do i order some items?",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"purchase\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "purchase",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me listing your allowed payment methods?",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_information\",\n  \"category\": \"payment_methods\"\n}\n```",
+    "parsed_intent": "request_information",
+    "parsed_category": "payment_methods",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i need to do to see bill #37777?",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_details\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_details",
+    "valid_json": true
+  },
+  {
+    "test_query": "i cannot subscribe to youir newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"subscribe\",\n  \"category\": \"subscription\"\n}\n```",
+    "parsed_intent": "subscribe",
+    "parsed_category": "subscription",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me see the early exit penalties?",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"legal\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "legal",
+    "valid_json": true
+  },
+  {
+    "test_query": "update info on pro account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account information\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account information",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i see if there is anything new on my compensation?",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"compensation\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "compensation",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me seeing when my article is going to arrive?",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i list the allowedd payment options",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_information\",\n  \"category\": \"payment_options\"\n}\n```",
+    "parsed_intent": "request_information",
+    "parsed_category": "payment_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "problem with {{account type}} account removals",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help leaving a coment for ur products",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"product_support\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "product_support",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have to do to see the early exit fee?",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how i could check the eta of purchase {{order number}}",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to notiyf of a registration problem",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"registration\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "registration",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help acquiring an article",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"article_acquisition\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "article_acquisition",
+    "valid_json": true
+  },
+  {
+    "test_query": "cancel {{account category}} acount",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to file a complaint against your company",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"complaint\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "complaint",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "refunding {{refund amount}}  dollars",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"refund\",\n  \"category\": \"finance\"\n}\n```",
+    "parsed_intent": "refund",
+    "parsed_category": "finance",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to restore the password of my profile",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "can ya help me to modify the delivery address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order modification\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order modification",
+    "valid_json": true
+  },
+  {
+    "test_query": "i paid {{currency symbol}}{{refund amount}} for these articles, i have to obtain a rebate",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_refund\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request_refund",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "how to download the bills from {{person name}}?",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "modifying info on platinum account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help making an customer claim against your business",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have todo to find invoice #37777",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to check at what time customer support available is",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me seeing when my product is going to arrive?",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "deleting pro account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"account management\",\n  \"category\": \"account deletion\"\n}\n```",
+    "parsed_intent": "account management",
+    "parsed_category": "account deletion",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance listing the payment methods",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_payment_methods\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request_payment_methods",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "edit details on {{account category}} account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"update\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "update",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how to request a refund of my money",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund_request\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund_request",
+    "valid_json": true
+  },
+  {
+    "test_query": "need to write a review about ur company how can i do it",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"review_request\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "review_request",
+    "valid_json": true
+  },
+  {
+    "test_query": "i cannot create a user, help to inform of a signup problem",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "my goddamn delivery address has changed, change it",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"address_change\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "address_change",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance to take a quick look at bill #85632",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me see your allowed payment options",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_support\",\n  \"category\": \"payment_options\"\n}\n```",
+    "parsed_intent": "customer_support",
+    "parsed_category": "payment_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how to leave some feedback",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have a problem entering the secindary shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "need to make a consumer reclamation against ur organization",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "need help to set up my secondary delivery address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"delivery setup\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "delivery setup",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to send my feedback for your company",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"feedback\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "feedback",
+    "valid_json": true
+  },
+  {
+    "test_query": "i  have lost my account access key where can i recover it",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"account recovery\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "account recovery",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "where could i update the adress",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"location\",\n  \"category\": \"address\"\n}\n```",
+    "parsed_intent": "location",
+    "parsed_category": "address",
+    "valid_json": true
+  },
+  {
+    "test_query": "error with sign-up",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account creation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "have a questiin about the removal of a {{account type}} account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "remove premium account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"cancel or remove\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "cancel or remove",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to get my bill from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to inform of errors with online payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_support\",\n  \"category\": \"payment_error\"\n}\n```",
+    "parsed_intent": "customer_support",
+    "parsed_category": "payment_error",
+    "valid_json": true
+  },
+  {
+    "test_query": "help touse the {{account category}} profile",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance downloading the bills from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to update my address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"update\",\n  \"category\": \"address\"\n}\n```",
+    "parsed_intent": "update",
+    "parsed_category": "address",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know what i have to do to download my invoice #12588",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know whzt to do to inform of a problem with payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "i would like to shop some of your product, how to do it?",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"shopping\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "shopping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help making a complaint",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"complaint\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "complaint",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am waiting for a compensation of {{currency symbol}}{{refund amount}}, was it processed",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"payment\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "payment",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how to contact a person",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"contact\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "contact",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to look for the bill from ten months ago",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help to see the withdrawal charges",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account information\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account information",
+    "valid_json": true
+  },
+  {
+    "test_query": "i call to check when my parcel is gonna arive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"shipping status\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "shipping status",
+    "valid_json": true
+  },
+  {
+    "test_query": "download bill from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "will you transfer to me somebody?",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"communication\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "communication",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know what i need to do to cancel the premium account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you direct to me a person?",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"contact_person\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "contact_person",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know how i can unsubscribe from ur company newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"unsubscribe\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "unsubscribe",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need to swap an item of purchase {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"item exchange\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "item exchange",
+    "valid_json": true
+  },
+  {
+    "test_query": "editing {{account category}} account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i cancel the {{account category}} account?",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know what i have to do to speak to an assistant",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"help\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "help",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have a tyrouble modifying my address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"address_modification\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "address_modification",
+    "valid_json": true
+  },
+  {
+    "test_query": "i lost my invoice from {{person name}}, find it for me",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "tell me more about updating the delivery address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me obtaining refunds?",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund",
+    "valid_json": true
+  },
+  {
+    "test_query": "i expect a damn restitution of {{currency symbol}}{{refund amount}}",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"financial\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "financial",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what to do to switch to the {{account type}} account",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "retrieve my user password",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"account_management\",\n  \"category\": \"password_recovery\"\n}\n```",
+    "parsed_intent": "account_management",
+    "parsed_category": "password_recovery",
+    "valid_json": true
+  },
+  {
+    "test_query": "need assistance seeing the payment methods",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment options\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment options",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know what i need to do to speak to customer service",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want a {{account type}} account",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_account\",\n  \"category\": \"{{account_type}}\"\n}\n```",
+    "parsed_intent": "request_account",
+    "parsed_category": "{{account_type}}",
+    "valid_json": true
+  },
+  {
+    "test_query": "i try ot order a few of ur item",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"order\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "order",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance to submit a different shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am trying to change my delivery address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"address changes\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "address changes",
+    "valid_json": true
+  },
+  {
+    "test_query": "i can't receive the damn corporate newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"complaint\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "complaint",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to see the cancellation penalty",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i make a complaint against your company?",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"complaint\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "complaint",
+    "valid_json": true
+  },
+  {
+    "test_query": "can ya help me see the early termination fee",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have to do to report errors with payments",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"finance\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "finance",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me ask for a compensation",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "create new {{account type}} account for daughter",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"create_account\",\n  \"category\": \"{{account_type}}\"\n}\n```",
+    "parsed_intent": "create_account",
+    "parsed_category": "{{account_type}}",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance to list the accepted payment methods",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_payment_methods\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request_payment_methods",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "issue submitting a secondary shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help cancelling the company newsletter subsrciption",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"subscription cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "subscription cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to ask for a compensation of my money",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"accounting_or_finance\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "accounting_or_finance",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how i can see your refund policy",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i would like to make a bloody complaint, could you help me?",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"complaint\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "complaint",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance checking the restitution current status",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"account information\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "account information",
+    "valid_json": true
+  },
+  {
+    "test_query": "do ya deliver to {{delivery country}}",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"order_delivery\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "order_delivery",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do ont know how to send fucking feedback for a service",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"suggestion\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "suggestion",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not want this item, i try to cancel order {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"cancel order\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "cancel order",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i missed several items in purchase {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"order status\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "order status",
+    "valid_json": true
+  },
+  {
+    "test_query": "how to see how long it takes for my delivery to arrive?",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"delivery_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "delivery_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want to make a consumer claim",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"consumer\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "consumer",
+    "valid_json": true
+  },
+  {
+    "test_query": "i cant enter a secondary shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"shipping\",\n  \"category\": \"address\"\n}\n```",
+    "parsed_intent": "shipping",
+    "parsed_category": "address",
+    "valid_json": true
+  },
+  {
+    "test_query": "where do i inform  of problems with a registration",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"registration\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "registration",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i need to do to check the withdrawal fees?",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"account/transaction\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "account/transaction",
+    "valid_json": true
+  },
+  {
+    "test_query": "can ya help me cancel order {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"order_cancellation\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "order_cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i mised some items in purchase {{order number}} can i add them",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order status\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order status",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have to do to get the bill from {{person name}}?",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to see at what time i can contact customer service",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service_contact\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service_contact",
+    "valid_json": true
+  },
+  {
+    "test_query": "i'm experiencing a registration error",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"issue\",\n  \"category\": \"registration\"\n}\n```",
+    "parsed_intent": "issue",
+    "parsed_category": "registration",
+    "valid_json": true
+  },
+  {
+    "test_query": "updating information on {{account category}} account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information update\",\n  \"category\": \"{{account category}}\"\n}\n```",
+    "parsed_intent": "information update",
+    "parsed_category": "{{account category}}",
+    "valid_json": true
+  },
+  {
+    "test_query": "where to send feedback about a product?",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"feedback\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "feedback",
+    "valid_json": true
+  },
+  {
+    "test_query": "i can't submit a new shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"shipping\",\n  \"category\": \"address\"\n}\n```",
+    "parsed_intent": "shipping",
+    "parsed_category": "address",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how i can submit some feedback",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to find my damn invoice from {{person name}}",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "wanna order a few of ur article",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"product\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "product",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have to do to notify of a problem with a sign-up",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"service request\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "service request",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "where to change to the {{account type}} account?",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"finance\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "finance",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me check ur available payment options",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"payment_options\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "payment_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "adding article to order {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"order\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "order",
+    "valid_json": true
+  },
+  {
+    "test_query": "where do i lodge a claim against your business?",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me see under which circumstances can i request a refund",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"refund policy\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "refund policy",
+    "valid_json": true
+  },
+  {
+    "test_query": "wanna use the {{account type}} account i need help",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_account_help\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "request_account_help",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "where to file a customer reclamation against your company ?",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"reclamation\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "reclamation",
+    "valid_json": true
+  },
+  {
+    "test_query": "close {{account type}} account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"transaction\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "transaction",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how i can see the cancellation fees",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what i need to do to download the bioll #12588",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"product_download\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "product_download",
+    "valid_json": true
+  },
+  {
+    "test_query": "change to freemium acount",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"account type\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "account type",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help retrieving the pwd of my user account",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_account_password\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "request_account_password",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need to recover my profile password",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"account_recovery\",\n  \"category\": \"password_recovery\"\n}\n```",
+    "parsed_intent": "account_recovery",
+    "parsed_category": "password_recovery",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how to edit my delivery address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "need assistance to cancel order {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "want help to change several items of purchase {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"purchase\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "purchase",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to chat with a livbe agent",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"communication\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "communication",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me contact customer assistance",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"contact\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "contact",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance seeing when my purchase is going to arrive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order status\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help to get my invoices from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dp not know how to cancel order {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"order cancellation\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "order cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to see when will my product arrive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order status\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i bought some articles, how to cancel order {{order number}}?",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"order cancellation\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "order cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to list the available payment modalities ?",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"payment_options\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "payment_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you give me information about the damn shipment options?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what to ddo to update the address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"solve_problem\",\n  \"category\": \"address_management\"\n}\n```",
+    "parsed_intent": "solve_problem",
+    "parsed_category": "address_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i call to makle a customer claim against your business",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to create a standard account?",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"account creation\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "account creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "help seeing your money back  policy",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i ain't registered, i have got to open a {{account type}} account",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"registration\",\n  \"category\": \"account opening\"\n}\n```",
+    "parsed_intent": "registration",
+    "parsed_category": "account opening",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have a issue entering my secondary delivery address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"issue\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "issue",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to inform of troubles with online payment",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know how to cancel purchase {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase cancellation\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "purchase cancellation",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "need help downloading the invoices from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "where could i submit the shipping address?",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"shipping\",\n  \"category\": \"address\"\n}\n```",
+    "parsed_intent": "shipping",
+    "parsed_category": "address",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know what i need to do to cancel my standard account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account cancellation\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to talk to customer service, how can i do it?",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i try to change to the {{account type}} account",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_account_change\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "request_account_change",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "check in which cases can i ask for a fucking reimbursement",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "help to see in what cases can i request my money back",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund_request\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund_request",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i have to do to restore my user account key?",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am waiting for an rebate of {{currency symbol}}{{refund amount}}",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"financial\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "financial",
+    "valid_json": true
+  },
+  {
+    "test_query": "i try to see ur reimbursement policy",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"reimbursement_policy\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "reimbursement_policy",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am waiting for a reimbursement of {{refund amount}} dollars",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"finance\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "finance",
+    "valid_json": true
+  },
+  {
+    "test_query": "check bills from {{person name}}",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it possible to get my bill #00108?",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how i can obtain compensations of my money",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"account_inquiries\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "account_inquiries",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know what to do to sign up to your newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"informational\",\n  \"category\": \"help\"\n}\n```",
+    "parsed_intent": "informational",
+    "parsed_category": "help",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me to take a quick look at my bill #85632?",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need to unsubscribe from your newsletter, how can i do it?",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"unsubscribe\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "unsubscribe",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance to request reimbursements of my money",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"reimbursements\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "reimbursements",
+    "valid_json": true
+  },
+  {
+    "test_query": "need assistance cancelling purchase {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"purchase cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "purchase cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "do you shp to {{delivery city}}?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "how to reset my profile pin",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i retrieve the password of my user profile?",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "help checking in which cases can i ask to be reimbursed",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"reimbursement\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "reimbursement",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have a question about opening pro accounts",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_opening\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_opening",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know how to inform of a payment problem",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "where do i buy something?",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"shopping\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "shopping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to chat with a human agent",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"chat\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "chat",
+    "valid_json": true
+  },
+  {
+    "test_query": "check status of order",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"order inquiry\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "order inquiry",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need assistance to notify of an error with online payments",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"payment issues\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "payment issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "i try to chat with a live agent",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"communication\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "communication",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "could you help me cancelling the standard account?",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account cancellation\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account cancellation",
+    "valid_json": true
+  },
+  {
+    "test_query": "will umail me the bills from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am trying to check what hours i can call customer support",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i am unhappy with your work, i want to file a consumer claim",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"consumer_claim\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "consumer_claim",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help seeing how soonj can i expect my parcel",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want information about the removal of a standard account",
+    "ground_truth": "delete_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to list the available  payment options",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"request_payment_options\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "request_payment_options",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know how to check my refund current status",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"refund status\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "refund status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to correct purchase {{order number}}, i need assistance",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase correction\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "purchase correction",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "could uhelp me switch  some articles of order {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order status\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what i have to do to speak with an operator",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "how could i purchase some fucking articles",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"articles\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "articles",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how to inform of sign-up errrors",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"customer support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "customer support",
+    "valid_json": true
+  },
+  {
+    "test_query": "need help to set my delivery address up",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order setup\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order setup",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont have a {{account category}} account eyt i need to sign up",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"registration\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "registration",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you tell me more about updating my delivery address?",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "help informing of a problem with sign-up",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "chnge data on {{account type}} account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"update_account_data\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "update_account_data",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have got to edit my goddamn account, could you help me?",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i do not know what i have to do to chat with a human agent",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i need to do to get my invoices from {{person name}}",
+    "ground_truth": "get_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"accounting\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "accounting",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i check the eta of the purchase {{order number}}?",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "help leaving feedback for your products",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"feedback\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "feedback",
+    "valid_json": true
+  },
+  {
+    "test_query": "can i check the shipment options?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"query\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "query",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "can you help me leave an opinion foor a product?",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"product feedback\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "product feedback",
+    "valid_json": true
+  },
+  {
+    "test_query": "i try to see what hours customer service aailable is",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"service_hours\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "service_hours",
+    "valid_json": true
+  },
+  {
+    "test_query": "can i create a different bloody {{account type}} account for my father?",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"account creation\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "account creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to enter a new shipping address, how do i do it?",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need to check in which cases can i ask for a reimbursement",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "show cancellation charges",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"cancellation policy\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "cancellation policy",
+    "valid_json": true
+  },
+  {
+    "test_query": "need to create an {{account category}} account",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"create_account\",\n  \"category\": \"{{account_category}}\"\n}\n```",
+    "parsed_intent": "create_account",
+    "parsed_category": "{{account_category}}",
+    "valid_json": true
+  },
+  {
+    "test_query": "i dont know how to change to the premium account",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i create a bloody {{account category}} account for my father?",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"create_account\",\n  \"category\": \"finance\"\n}\n```",
+    "parsed_intent": "create_account",
+    "parsed_category": "finance",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to see my refund current status, will you help me?",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"refund status\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "refund status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need to order several articles, can you help me?",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"shopping\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "shopping",
+    "valid_json": true
+  },
+  {
+    "test_query": "help seeing what shipping options you offer",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping_options\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping_options",
+    "valid_json": true
+  },
+  {
+    "test_query": "i ain't registered, i want to create a pro account",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"create_account\",\n  \"category\": \"account_creation\"\n}\n```",
+    "parsed_intent": "create_account",
+    "parsed_category": "account_creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "wanna see how soon can i expect my parcel i need assistance",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"parcel delivery\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "parcel delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "do you ship  to {{delivery country}}?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"query\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "query",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how to change to the pro account",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i get information about creating standard accounts",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_creation\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "show me purchase {{order number}} statud",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"order_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "order_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "is it plssible to order from {{delivery country}}?",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"order\",\n  \"category\": \"delivery\"\n}\n```",
+    "parsed_intent": "order",
+    "parsed_category": "delivery",
+    "valid_json": true
+  },
+  {
+    "test_query": "i can check the status of my company newsletter subscription",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"subscription_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "subscription_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i see at what time customer support availabl is",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"support_information\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "support_information",
+    "valid_json": true
+  },
+  {
+    "test_query": "add article to order {{order number}}",
+    "ground_truth": "change_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"order\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "order",
+    "valid_json": true
+  },
+  {
+    "test_query": "errors setting up a secondary shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "need to update my user information how can i do it",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "assistance to recover the key of my user profile",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account recovery\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account recovery",
+    "valid_json": true
+  },
+  {
+    "test_query": "can ya help me to see ur allowed payment methods",
+    "ground_truth": "check_payment_methods",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "are the charges of ur services reimbursable",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance to change my delivery address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"address changes\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "address changes",
+    "valid_json": true
+  },
+  {
+    "test_query": "wqhere to obtain rebates of money",
+    "ground_truth": "get_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"rewards\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "rewards",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i locate the invoice #37777?",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"invoice_location\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "invoice_location",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me reset my user profile password",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i need help opening a new goddamn gold account",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"account_opening\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "account_opening",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to conract customer assistance",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"contact_support\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "contact_support",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "purchase {{order number}} status",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"order status inquiry\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "order status inquiry",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want assistance seeing when my item is going to arrive",
+    "ground_truth": "delivery_period",
+    "baseline_output": "```json\n{\n  \"intent\": \"order inquiry\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "order inquiry",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i want help talking with an agent",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i'm trying to report errors with signup",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"report_error\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "report_error",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "open another premium account for mum",
+    "ground_truth": "create_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"create_account\",\n  \"category\": \"account_creation\"\n}\n```",
+    "parsed_intent": "create_account",
+    "parsed_category": "account_creation",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have to see my bill, help me",
+    "ground_truth": "check_invoice",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"billing\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "billing",
+    "valid_json": true
+  },
+  {
+    "test_query": "where do i report an issue iwth sign-up?",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "can uhelp me canceling purchase {{order number}}",
+    "ground_truth": "cancel_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"purchase_cancel\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "purchase_cancel",
+    "valid_json": true
+  },
+  {
+    "test_query": "how do i inform of a issue with a sign-up?",
+    "ground_truth": "registration_problems",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account-issues\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account-issues",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me checking what shipment methods i have",
+    "ground_truth": "delivery_options",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "help to make a consumer reclamation against your business",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have problems entering a different shipping address",
+    "ground_truth": "set_up_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"shipping\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "shipping",
+    "valid_json": true
+  },
+  {
+    "test_query": "i'm calling to lodge a claim against ur company",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"contact\",\n  \"category\": \"customer service\"\n}\n```",
+    "parsed_intent": "contact",
+    "parsed_category": "customer service",
+    "valid_json": true
+  },
+  {
+    "test_query": "i habe a problem with my pin retrieval",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me cancel my subscriptiopn to ur newsletter",
+    "ground_truth": "newsletter_subscription",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"cancel subscription\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "cancel subscription",
+    "valid_json": true
+  },
+  {
+    "test_query": "where could i inform of issues with payment?",
+    "ground_truth": "payment_issue",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"payment\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "payment",
+    "valid_json": true
+  },
+  {
+    "test_query": "edit info on {{account category}} account",
+    "ground_truth": "edit_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"update_account_info\",\n  \"category\": \"account_management\"\n}\n```",
+    "parsed_intent": "update_account_info",
+    "parsed_category": "account_management",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know how to reset the pwd of my user profile",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"help\",\n  \"category\": \"account management\"\n}\n```",
+    "parsed_intent": "help",
+    "parsed_category": "account management",
+    "valid_json": true
+  },
+  {
+    "test_query": "need assistance recovering the pin code of my account",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"support\",\n  \"category\": \"account recovery\"\n}\n```",
+    "parsed_intent": "support",
+    "parsed_category": "account recovery",
+    "valid_json": true
+  },
+  {
+    "test_query": "i have troubles editing the address",
+    "ground_truth": "change_shipping_address",
+    "baseline_output": "```json\n{\n  \"intent\": \"technical_support\",\n  \"category\": \"address_editing\"\n}\n```",
+    "parsed_intent": "technical_support",
+    "parsed_category": "address_editing",
+    "valid_json": true
+  },
+  {
+    "test_query": "help checking the withdrawal penalties",
+    "ground_truth": "check_cancellation_fee",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service\",\n  \"category\": \"account assistance\"\n}\n```",
+    "parsed_intent": "customer service",
+    "parsed_category": "account assistance",
+    "valid_json": true
+  },
+  {
+    "test_query": "i cannot see if there is anything new on my refund",
+    "ground_truth": "track_refund",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"refund_status\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "refund_status",
+    "valid_json": true
+  },
+  {
+    "test_query": "i don't know what i have to do to earn a few of your item",
+    "ground_truth": "place_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"product\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "product",
+    "valid_json": true
+  },
+  {
+    "test_query": "help me check in what cases can i ask to be refunded",
+    "ground_truth": "check_refund_policy",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"refund\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "refund",
+    "valid_json": true
+  },
+  {
+    "test_query": "filing consumer claim against your business",
+    "ground_truth": "complaint",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer_service\",\n  \"category\": \"consumer_protection\"\n}\n```",
+    "parsed_intent": "customer_service",
+    "parsed_category": "consumer_protection",
+    "valid_json": true
+  },
+  {
+    "test_query": "could you help me talking with customer assistance?",
+    "ground_truth": "contact_customer_service",
+    "baseline_output": "```json\n{\n  \"intent\": \"customer service inquiry\",\n  \"category\": \"support\"\n}\n```",
+    "parsed_intent": "customer service inquiry",
+    "parsed_category": "support",
+    "valid_json": true
+  },
+  {
+    "test_query": "how can i send some feedback about a product?",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"feedback\",\n  \"category\": \"product\"\n}\n```",
+    "parsed_intent": "feedback",
+    "parsed_category": "product",
+    "valid_json": true
+  },
+  {
+    "test_query": "i cannot recover my pwd",
+    "ground_truth": "recover_password",
+    "baseline_output": "```json\n{\n  \"intent\": \"account_recovery\",\n  \"category\": \"password_recovery\"\n}\n```",
+    "parsed_intent": "account_recovery",
+    "parsed_category": "password_recovery",
+    "valid_json": true
+  },
+  {
+    "test_query": "see order {{order number}} current status",
+    "ground_truth": "track_order",
+    "baseline_output": "```json\n{\n  \"intent\": \"view_order_status\",\n  \"category\": \"customer_service\"\n}\n```",
+    "parsed_intent": "view_order_status",
+    "parsed_category": "customer_service",
+    "valid_json": true
+  },
+  {
+    "test_query": "what do i need to do to talk to someone",
+    "ground_truth": "contact_human_agent",
+    "baseline_output": "```json\n{\n  \"intent\": \"information_request\",\n  \"category\": \"customer_support\"\n}\n```",
+    "parsed_intent": "information_request",
+    "parsed_category": "customer_support",
+    "valid_json": true
+  },
+  {
+    "test_query": "is there a way to submit bloody feedback for a product?",
+    "ground_truth": "review",
+    "baseline_output": "```json\n{\n  \"intent\": \"feedback\",\n  \"category\": \"product\"\n}\n```",
+    "parsed_intent": "feedback",
+    "parsed_category": "product",
+    "valid_json": true
+  },
+  {
+    "test_query": "use platinum account",
+    "ground_truth": "switch_account",
+    "baseline_output": "```json\n{\n  \"intent\": \"purchase\",\n  \"category\": \"account\"\n}\n```",
+    "parsed_intent": "purchase",
+    "parsed_category": "account",
+    "valid_json": true
+  }
+]

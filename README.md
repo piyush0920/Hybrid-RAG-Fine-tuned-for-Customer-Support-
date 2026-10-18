@@ -151,33 +151,28 @@ ROUGE and BLEU measure textual overlap, not factual correctness by themselves. A
 ```text
 Hybrid-RAG-Customer-Support/
 │
-├── Data_Understanding_and_EDA.ipynb
-├── Data_Preparation.ipynb
-├── baseline-model-evaluation.ipynb
-├── rag-implementation.ipynb
-├── solution-v1-rag-evaluation.ipynb
-├── fine-tuning-pipeline.ipynb
-├── Solution-V2-Fine-Tuned-RAG-Evaluation.ipynb
-│
-├── corporate_policies/
-│   └── *.md
+├── Notebooks/
+│   ├── data-understanding-and-eda.ipynb
+│   ├── data-preparation.ipynb
+│   ├── baseline-model-evaluation.ipynb
+│   ├── rag-implementation.ipynb
+│   ├── solution-v1—rag-evaluation.ipynb
+│   ├── fine-tuning-pipeline.ipynb
+│   └── solution-v2—fine-tuned-rag-evaluation.ipynb
 │
 ├── artifacts/
-│   ├── sampled_data.csv
-│   ├── df_test.csv
+│   ├── outputs_baseline.json
 │   ├── outputs.json
 │   ├── v1_metrics.csv
-│   ├── training_log.csv
-│   └── training_curves.png
+│   ├── Comparative_Results_Full.csv
+│   └── Comparative_Results_Summary.csv
 │
-├── chroma_db/
-├── intent_lora_best/
-├── intent_lora/
-│
+├── Comparative_Analysis_Report.pdf
+├── Project_Proposal_and_Methodology.pdf
 └── README.md
 ```
 
-*This is the logical project structure; generated artifacts and model checkpoints may be stored in Kaggle input/output locations rather than committed to GitHub.*
+*The SOP documents (`corporate_policies/`), the Chroma index, the LoRA checkpoints (`intent_lora_best/`, `intent_lora/`), and the training log and curves are generated or stored in Kaggle input/output locations and are not committed to this repository.*
 
 ## Getting Started
 
@@ -195,13 +190,13 @@ Run the notebooks in the following order:
 
 | Order | Notebook                                        | Purpose                                                   |
 | ----- | ----------------------------------------------- | --------------------------------------------------------- |
-| 1     | `Data_Understanding_and_EDA.ipynb`              | Explore and validate the dataset                          |
-| 2     | `Data_Preparation.ipynb`                        | Prepare instruction-tuning data and data splits           |
+| 1     | `data-understanding-and-eda.ipynb`              | Explore and validate the dataset                          |
+| 2     | `data-preparation.ipynb`                        | Prepare instruction-tuning data and data splits           |
 | 3     | `baseline-model-evaluation.ipynb`               | Generate baseline predictions                             |
 | 4     | `rag-implementation.ipynb`                      | Build the SOP vector index and generate Naive RAG outputs |
-| 5     | `solution-v1-rag-evaluation.ipynb`              | Evaluate baseline and Naive RAG                           |
+| 5     | `solution-v1—rag-evaluation.ipynb`              | Evaluate baseline and Naive RAG                           |
 | 6     | `fine-tuning-pipeline.ipynb`                    | Train and save LoRA adapters                              |
-| 7     | `Solution V2 — Fine-Tuned RAG Evaluation.ipynb` | Evaluate Hybrid RAG and compare approaches                |
+| 7     | `solution-v2—fine-tuned-rag-evaluation.ipynb` | Evaluate Hybrid RAG and compare approaches                |
 
 **Important:** Each stage depends on artifacts created by earlier notebooks. Update dataset, checkpoint, and artifact paths to match your environment.
 

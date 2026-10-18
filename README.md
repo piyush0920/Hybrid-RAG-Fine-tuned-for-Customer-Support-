@@ -1,4 +1,4 @@
-# # Hybrid RAG: Fine-Tuned for Customer Support
+# Hybrid RAG: Fine-Tuned for Customer Support
 
 **An end-to-end customer support NLP project combining intent classification, Retrieval-Augmented Generation (RAG), and parameter-efficient fine-tuning to build a policy-aware support pipeline.**
 
@@ -9,8 +9,8 @@ Customer support systems need to understand customer queries, identify the corre
 This project explores three progressively more capable approaches:
 
 1. **Baseline Model** — A pretrained instruction-following language model predicts the customer's intent and category.
-2. **Naive RAG** — Retrieves relevant Standard Operating Procedure (SOP) documents from a vector database and incorporates them into the response-generation workflow.
-3. **Hybrid RAG** — Combines a fine-tuned intent-routing model with SOP retrieval and a final response-generation stage.
+2. **Naive RAG (Solution V1)** — Retrieves the most relevant Standard Operating Procedure (SOP) document from a vector database using the raw query and incorporates it into the prompt.
+3. **Hybrid RAG (Solution V2)** — Combines a LoRA fine-tuned intent-routing model with SOP retrieval and a final response-generation stage.
 
 The objective is to evaluate the contribution of retrieval and fine-tuning separately, then compare all three approaches using consistent evaluation criteria.
 
@@ -43,7 +43,7 @@ flowchart TD
 | Component                   | Technologies                               |
 | --------------------------- | ------------------------------------------ |
 | Programming                 | Python                                     |
-| Language model              | Qwen2.5-1.5B-Instruct                      |
+| Language model              | Qwen2.5-1.5B-Instruct (4-bit NF4)          |
 | Model fine-tuning           | Hugging Face Transformers, PEFT, LoRA      |
 | Quantization                | BitsAndBytes                               |
 | Embeddings                  | Sentence Transformers — `all-MiniLM-L6-v2` |
@@ -52,71 +52,66 @@ flowchart TD
 | Data processing             | Pandas, NumPy                              |
 | Evaluation                  | Scikit-learn, ROUGE, BLEU                  |
 | Training and visualization  | PyTorch, Matplotlib, Seaborn               |
-| Execution environment       | Kaggle notebooks with GPU support          |
+| Execution environment       | Local Jupyter (notebooks 1–2), Kaggle T4 GPU (notebooks 3–7) |
 
 ## Project Workflow
 
 ### 1. Data Understanding and Exploratory Data Analysis
 
-* Explore the Bitext customer support dataset and its intent/category distribution.
+* Explore the Bitext customer support dataset (26,872 rows) and a 4,000-row working sample covering 27 intents and 11 categories.
 * Inspect missing values, duplicates, and data quality.
-* Analyze frequent intents and relationships within the data.
-* Examine SOP documents using TF-IDF vectorization and cosine similarity.
-* Visualize patterns that may influence classification and document retrieval.
+* Analyze frequent intents and prompt-length distribution.
+* Examine the 13 SOP documents using TF-IDF vectorization and cosine similarity.
 
 ### 2. Data Preparation and Instruction Tuning
 
-* Clean and standardize intent, category, and instruction fields.
+* Clean and standardize intent (lowercase), category (uppercase), and instruction fields; remove duplicates (3,902 rows remain).
 * Convert records into ChatML instruction-tuning format.
 * Define assistant targets as JSON containing `intent` and `category`.
-* Tokenize the instruction dataset and mask padding tokens in the training labels.
+* Tokenize the dataset (max length 128) and mask padding tokens **and all prompt tokens** (everything up to the assistant header) with `-100`, so the training loss covers only the JSON answer.
 * Analyze token-length distributions and potential truncation.
-* Create stratified training, validation, and held-out test partitions.
+* Create stratified 80/10/10 training, validation, and held-out test partitions (3,121 / 390 / 391 rows).
 * Prepare SOP documents for downstream retrieval.
+
+> Note: the Task 2.3.1 markdown in the data-preparation notebook still describes padding-only masking; the implementation additionally masks prompt tokens.
 
 ### 3. Baseline Model Evaluation
 
-* Run the pretrained Qwen model on held-out customer queries.
+* Run the pretrained Qwen model on all 391 held-out customer queries.
 * Parse model outputs into structured intent/category predictions.
 * Save the predictions for downstream comparison.
-* Inspect output formatting and baseline classification behavior.
 
 ### 4. Naive RAG Implementation
 
 * Load Markdown SOP documents into LangChain document objects.
 * Generate document embeddings using `all-MiniLM-L6-v2`.
 * Build a persistent ChromaDB vector index.
-* Retrieve the most relevant SOP for each customer query.
+* Retrieve the most relevant SOP (top-1) for each customer query.
 * Incorporate retrieved context into the generation prompt.
 * Save RAG outputs and their associated source metadata.
 
 ### 5. Solution V1 — RAG Evaluation
 
-Evaluate the baseline and Naive RAG pipelines using:
+Evaluate the baseline and Naive RAG pipelines (live, on a 50-row sample) using:
 
 * Output format adherence
 * SOP-grounded ROUGE-1 and ROUGE-L scores
 * BLEU scores
 * Output consistency under deterministic decoding
 * Unsupported claims and potential hallucinations
-* Comparative metrics to examine the contribution of retrieval
 
-The results are exported to `v1_metrics.csv` for use in subsequent evaluation stages.
+The results are exported to `v1_metrics.csv`.
 
 ### 6. Fine-Tuning Pipeline
 
 Fine-tune the intent-routing model using parameter-efficient adaptation rather than updating the entire base model.
 
-The pipeline includes:
-
-* Loading tokenized training and validation datasets.
-* Configuring LoRA adapters on the `q_proj` and `v_proj` attention modules.
-* Applying quantization-aware model loading.
-* Training with a custom PyTorch loop and AdamW optimization.
-* Monitoring training and validation loss.
-* Implementing early stopping based on validation performance.
-* Saving the best and final adapter checkpoints.
-* Exporting the training log and loss curves.
+* LoRA adapters (r=16, alpha=32, dropout 0.05) on the `q_proj` and `v_proj` attention modules — 2,179,072 trainable parameters (0.141%).
+* 4-bit NF4 quantization-aware model loading.
+* Custom PyTorch training loop with AdamW, constant learning rate 2e-4, batch size 4, 800 steps (about one epoch).
+* Validation every 10 steps with early stopping (patience 3); early stopping did not trigger.
+* Best validation loss 0.3203 (step 780); validation loss fell from 2.42 at step 10.
+* Best and final adapter checkpoints, training log, and loss curves saved.
 
 **Training artifacts:**
 
@@ -129,35 +124,27 @@ The pipeline includes:
 
 Integrate the fine-tuned intent router with the existing retrieval pipeline.
 
-The workflow is:
-
 1. Receive a customer query.
-2. Predict the intent using the fine-tuned model.
-3. Map the predicted intent to a retrieval-oriented search query.
-4. Retrieve the corresponding SOP context from ChromaDB.
-5. Generate the final response using the retrieved information.
-6. Evaluate the integrated pipeline against the held-out data.
-
-The evaluation framework includes format adherence, exact and fuzzy intent matching, ROUGE/BLEU, adversarial-query evaluation, and comparison with the Naive RAG results.
-
-The final comparison is designed to isolate the contribution of fine-tuning while keeping the retrieval component in place.
+2. Predict the intent with the fine-tuned router, using the same system prompt as in training.
+3. Map the predicted intent to a retrieval-oriented search string (e.g. `track_order` → "Track Order"), falling back to the raw query if the router output is not valid JSON.
+4. Retrieve the top SOP from ChromaDB.
+5. Generate the final response with the retrieved SOP as context.
+6. Evaluate on all 391 held-out rows and on an adversarial subset (101 rows matched by hedging/difficulty words extracted from the data).
 
 ## Evaluation Framework
 
-The project uses multiple evaluation dimensions rather than relying on a single score.
-
 | Metric                  | Purpose                                                              |
 | ----------------------- | -------------------------------------------------------------------- |
-| Format adherence        | Measures whether model outputs follow the expected structure         |
-| Exact intent match      | Measures exact agreement between predicted and expected intents      |
-| Fuzzy intent match      | Examines partial or approximate agreement                            |
-| ROUGE-1                 | Measures unigram overlap with the reference response                 |
-| ROUGE-L                 | Measures longest-common-subsequence overlap                          |
-| BLEU                    | Measures n-gram precision against reference text                     |
-| Output consistency      | Checks whether repeated deterministic runs produce identical outputs |
-| Hallucination frequency | Assesses claims unsupported by the retrieved SOP context             |
+| Format adherence        | Share of outputs that parse as valid JSON (V2: final response; router-only reported separately) |
+| Exact intent match      | Exact agreement between predicted and expected intents               |
+| Fuzzy intent match      | At least half of the true label's words appear in the prediction     |
+| ROUGE-1                 | Unigram overlap with the SOP-grounded reference                      |
+| ROUGE-L                 | Longest-common-subsequence overlap                                   |
+| BLEU                    | N-gram precision against the reference                               |
+| Output consistency      | Identical outputs across repeated greedy runs (5 queries × 3 runs)   |
+| Hallucination frequency | Responses containing claims (timelines, "department X", "call us at", "tracking number X") not in the reference SOP |
 
-ROUGE and BLEU measure textual overlap, not factual correctness by themselves. Results should therefore be interpreted alongside SOP grounding and classification metrics.
+ROUGE and BLEU measure textual overlap, not factual correctness by themselves. All systems emit short JSON labels while references are prose SOPs, so these scores are very low for every system and do not separate them.
 
 ## Repository Structure
 
@@ -220,40 +207,41 @@ Run the notebooks in the following order:
 
 ## Key Engineering Considerations
 
-* **Data leakage prevention:** Use the held-out test partition for final evaluation, not model training.
-* **Structured outputs:** Validate model predictions before calculating classification metrics.
-* **Policy grounding:** Evaluate generated responses against relevant SOP documents rather than generic references.
-* **Reproducibility:** Record model configuration, training parameters, random seeds, and checkpoint selection.
-* **Fair comparisons:** Use consistent test examples and metric definitions when comparing baseline, Naive RAG, and Hybrid RAG.
-* **Resource efficiency:** Use parameter-efficient fine-tuning and quantization to reduce training memory requirements.
+* **Data leakage prevention:** The held-out test partition (391 rows) is never used in training or validation; split overlap was checked with set intersections.
+* **Structured outputs:** Model predictions are validated as JSON before classification metrics are calculated.
+* **Policy grounding:** Responses are scored against SOP references rather than generic ones.
+* **Loss masking:** Padding and prompt tokens are masked, so the model is trained only on the JSON answer.
+* **Reproducibility:** Model configuration, training parameters, and checkpoint selection are recorded; sampling and splits use seed 42, while the training loop itself is not seeded.
+* **Fair comparisons:** All three systems are scored on the same 391 test rows with identical metric definitions and greedy decoding.
+* **Resource efficiency:** LoRA and 4-bit quantization keep training within a free Kaggle T4.
 
 ## Results
 
-The project is structured to compare three approaches:
+All three systems were scored on the full 391-row held-out test split.
 
-* **Baseline:** Establishes the performance of the pretrained instruction-following model.
-* **Naive RAG:** Examines whether retrieving SOP context improves the response pipeline.
-* **Hybrid RAG:** Examines whether fine-tuned intent routing improves retrieval and downstream response quality.
+| Metric                      | Baseline | Naive RAG (V1) | Hybrid RAG (V2) |
+| --------------------------- | -------- | -------------- | --------------- |
+| Format adherence (%)        | 100.0    | 94.6           | 93.1            |
+| Exact intent match (%)      | 1.8      | 1.0            | **34.0**        |
+| Fuzzy intent match (%)      | 7.7      | 19.9           | **67.5**        |
+| ROUGE-1                     | 0.014    | 0.026          | 0.021           |
+| ROUGE-L                     | 0.014    | 0.023          | 0.018           |
+| BLEU                        | 0.000    | 0.000          | 0.000           |
+| Hallucination frequency (%) | 0.0      | 0.0            | 1.0 (4/391)     |
+| Consistency (%)             | 100.0    | 100.0          | 100.0           |
 
-Final numerical results should be added after the full evaluation has been run and verified. No improvement percentage is claimed here without validated, comparable results.
-
-## Future Improvements
-
-* Improve intent-routing accuracy for ambiguous customer requests.
-* Introduce retrieval-ranking strategies beyond top-1 similarity search.
-* Evaluate retrieval quality independently from response quality.
-* Add automated checks for unsupported policy claims.
-* Expand adversarial testing for negation, repeated complaints, and frustrated customers.
-* Compare LoRA configurations and training hyperparameters.
-* Add an API or interactive interface for demonstrating the end-to-end pipeline.
+* V2 router-only format adherence is 98.2%; the 93.1% figure is for the final response.
+* On the adversarial subset (101 rows), V2 scores 95.0% format adherence, 33.7% exact match, and 69.3% fuzzy match.
+* Fine-tuning drives the intent-accuracy gain; retrieval alone did not improve intent labels (exact match 1.0% for V1 versus 1.8% for the Baseline).
+* Router labels remain partly off-schema (for example `refund` instead of `get_refund`, lowercase categories), so exact match is well below the 80% proposal target.
+* Consistency uses 5 queries × 3 runs; the live V1 evaluation (Notebook 5) uses a 50-row sample, so its figures differ slightly from the 391-row table.
 
 ## Conclusion
 
-This project demonstrates an end-to-end approach to customer support automation by combining **instruction-tuned intent classification, vector-based SOP retrieval, and parameter-efficient fine-tuning**. Its staged evaluation framework helps distinguish the contribution of retrieval from the contribution of fine-tuning, while emphasizing structured outputs, policy grounding, and reproducible experimentation.
+This project demonstrates an end-to-end approach to customer support automation by combining **instruction-tuned intent classification, vector-based SOP retrieval, and parameter-efficient fine-tuning**. Its staged evaluation framework separates the contribution of retrieval from the contribution of fine-tuning: fine-tuning the router raised exact intent match from 1.0% (Naive RAG) to 34.0% and fuzzy match from 19.9% to 67.5%, while retrieval alone left intent accuracy unchanged.
 
 ---
 
 **Author:** Piyush Sharma
 
 **Focus Areas:** NLP · Generative AI · Retrieval-Augmented Generation · LLM Fine-Tuning · Customer Support Automation
--

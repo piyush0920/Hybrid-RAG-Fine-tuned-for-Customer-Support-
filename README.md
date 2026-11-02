@@ -231,6 +231,12 @@ All three systems were scored on the full 391-row held-out test split.
 * Router labels remain partly off-schema (for example `refund` instead of `get_refund`, lowercase categories), so exact match is well below the 80% proposal target.
 * Consistency uses 5 queries × 3 runs; the live V1 evaluation (Notebook 5) uses a 50-row sample, so its figures differ slightly from the 391-row table.
 
+## Supporting reports
+
+- [Comparative analysis report](./Comparative_Analysis_Report.pdf)
+- [Project proposal and methodology](./Project_Proposal_and_Methodology.pdf)
+
+The committed repository includes the notebooks and result CSV/JSON artifacts. The source SOP collection, persistent Chroma index, and trained LoRA adapter checkpoints are external/generated inputs or outputs and are not committed. A full rerun therefore requires obtaining those materials and configuring the notebook paths as described in Getting Started.
 ## Conclusion
 
 This project demonstrates an end-to-end approach to customer support automation by combining **instruction-tuned intent classification, vector-based SOP retrieval, and parameter-efficient fine-tuning**. Its staged evaluation framework separates the contribution of retrieval from the contribution of fine-tuning: fine-tuning the router raised exact intent match from 1.0% (Naive RAG) to 34.0% and fuzzy match from 19.9% to 67.5%, while retrieval alone left intent accuracy unchanged.
@@ -238,5 +244,7 @@ This project demonstrates an end-to-end approach to customer support automation 
 ---
 
 **Author:** Piyush Sharma
+
+[GitHub](https://github.com/piyush0920) · [Portfolio](https://piyush0920.github.io/)
 
 **Focus Areas:** NLP · Generative AI · Retrieval-Augmented Generation · LLM Fine-Tuning · Customer Support Automation
